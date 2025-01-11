@@ -1,10 +1,41 @@
 ﻿using System.Text;
 using WordleSpoilers;
+using static System.Net.Mime.MediaTypeNames;
+using System.Threading;
+using System.Windows.Forms;
+using System.Drawing;
+//using System.Drawing.Common;
 
 Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 Console.WriteLine("~Welcome to WordleSpoilers~");
-Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+Console.WriteLine("~~~~~~~~~v1.0.0~~~~~~~~~~~~");
 Console.WriteLine();
+
+//var thread = new Thread(() =>
+//{
+//    // Check if there is an image in the clipboard
+//    if (Clipboard.ContainsImage())
+//    {
+//        // Retrieve the image
+//        var screenshot = Clipboard.GetImage();
+
+//        // If you want to display some information about the image, for example its size
+//        Console.WriteLine("Screenshot retrieved from clipboard!");
+//        Console.WriteLine($"Image size: {screenshot.Width}x{screenshot.Height}");
+
+//        // Optionally, you can save the image to a file
+//        screenshot.Save("screenshot.png", System.Drawing.Imaging.ImageFormat.Png);
+//        Console.WriteLine("Screenshot saved as screenshot.png");
+//    }
+//    else
+//    {
+//        Console.WriteLine("No image found in clipboard.");
+//    }
+//});
+
+//// Set the thread apartment state to STA
+//thread.SetApartmentState(ApartmentState.STA);
+//thread.Start();
 
 int wordleNo = GetWordleNo();
 var game = new Game(GetAnswer(), wordleNo);
