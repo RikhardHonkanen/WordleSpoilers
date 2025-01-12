@@ -6,7 +6,7 @@ The output is inserted into user's clipboard.
 Download in releases --->
 (grab the publish.zip folder, extract, and run the executable)
 
-you may also need to download .NET runtime
+you may also need to download .NET 8.0.0 runtime 
 https://dotnet.microsoft.com/download
 
 *Example of use*
