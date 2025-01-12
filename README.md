@@ -4,6 +4,7 @@ The output is inserted into user's clipboard.
 
 ## Release
 Download in releases --->
+(grab the publish.zip folder, extract, and run the executable)
 
 you may also need to download .NET runtime
 https://dotnet.microsoft.com/download
